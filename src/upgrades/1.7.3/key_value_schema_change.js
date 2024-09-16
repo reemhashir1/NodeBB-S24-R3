@@ -10,7 +10,7 @@ module.exports = {
     method: async function () {
         let configJSON;
         try {
-            configJSON = require('../../../config.json') || { [process.env.database]: true, database: process.env.database };
+            configJSON = require('../../../tsconfig.json') || { [process.env.database]: true, database: process.env.database };
         } catch (err) {
             configJSON = { [process.env.database]: true, database: process.env.database };
         }

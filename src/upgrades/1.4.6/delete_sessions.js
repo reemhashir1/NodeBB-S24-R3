@@ -1,8 +1,13 @@
 'use strict';
 
+
 const nconf = require('nconf');
 const db = require('../../database');
 const batch = require('../../batch');
+
+// Rest of the code
+
+
 
 module.exports = {
     name: 'Delete accidentally long-lived sessions',
@@ -10,7 +15,7 @@ module.exports = {
     method: async function () {
         let configJSON;
         try {
-            configJSON = require('../../../config.json') || { [process.env.database]: true };
+            configJSON = require('../../../tsconfig.json') || { [process.env.database]: true };
         } catch (err) {
             configJSON = { [process.env.database]: true };
         }
