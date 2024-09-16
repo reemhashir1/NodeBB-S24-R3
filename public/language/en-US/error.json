@@ -32,7 +32,7 @@
     "folder-exists": "Folder exists",
     "invalid-pagination-value": "Invalid pagination value, must be at least %1 and at most %2",
     "username-taken": "Username taken",
-    "username-taken-suggestion": "The username \"%1\" is already taken. How about \"%2\"?",
+    "username-taken": "The username \"%1\" is already taken. How about \"%2\"?",
     "email-taken": "Email taken",
     "email-nochange": "The email entered is the same as the email already on file.",
     "email-invited": "Email was already invited",
